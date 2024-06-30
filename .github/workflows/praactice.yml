@@ -11,7 +11,6 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm install
+        run: npm install && npm init @eslint/config
       - name: Run lint
         run: npm run lint
-        
